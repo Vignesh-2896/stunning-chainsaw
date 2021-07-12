@@ -7,7 +7,7 @@ document.addEventListener("keydown",(event) => {
 
 const fetchWeatherData = async(cityName) => {
     try {
-    let fetchedData = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=05518431df0ad23cdaeb9fdf1863de6b&units=metric`,{mode:'cors'});    
+    let fetchedData = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=05518431df0ad23cdaeb9fdf1863de6b&units=metric`,{mode:'cors'});    
     let currentDayData = await fetchedData.json();
     clearData();
 
@@ -35,7 +35,7 @@ const drillAndFetchData = (data,attribute) => {
     } else if(attribute == "Temperature"){
         fieldData = (data.temp.max).toFixed(1)+"°/"+(data.temp.min).toFixed(1)+"°";
     } else if(attribute == "Weather Type"){
-        fieldData = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
+        fieldData = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
     } else if(attribute == "Humidity"){
         fieldData = data.humidity+"%";
     } else if (attribute == "Possiblity of Rain"){
@@ -52,7 +52,7 @@ const drillAndFetchData = (data,attribute) => {
 
 const populateFutureForecast = async(latitutde, longitude) => {
 
-    fetchedData = await fetch(`http://api.openweathermap.org/data/2.5/onecall?lat=${latitutde}&lon=${longitude}&appid=05518431df0ad23cdaeb9fdf1863de6b&exclude=current,minutely,hourly&units=Metric`,{mode:'cors'});
+    fetchedData = await fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${latitutde}&lon=${longitude}&appid=05518431df0ad23cdaeb9fdf1863de6b&exclude=current,minutely,hourly&units=Metric`,{mode:'cors'});
     let futureDaysData = await fetchedData.json();
     futureDaysData = futureDaysData.daily;
     populateTodayForecast(futureDaysData[0]);
