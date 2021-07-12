@@ -57,6 +57,7 @@ const fetchTemperature = (data) => {
     return (data.temp.max).toFixed(1)+"°/"+(data.temp.min).toFixed(1)+"°";
 };
 
+
 const fetchHumidity = (data) => {
     return data.humidity+"%";
 };
