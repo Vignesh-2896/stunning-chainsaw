@@ -7,3 +7,5 @@ An alert will be sent if an incorrect city is entered or if nothing is input.
 Keyboard operations for Enter have been enabled.
 
 Kindly update your API key in the js file before attempting to fetch.
+
+[Link Demo](https://vignesh-2896.github.io/stunning-chainsaw/)
