@@ -8,4 +8,4 @@ Keyboard operations for Enter have been enabled.
 
 Kindly update your API key in the js file before attempting to fetch.
 
-[Link Demo](https://vignesh-2896.github.io/stunning-chainsaw/)
+[Link Demo](https://stunning-chainsaw.vigneshb7.repl.co)
