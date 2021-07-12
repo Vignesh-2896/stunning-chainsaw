@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Weather App</title>
+        <link rel = "stylesheet" href = "index.css">
+    </head>
+    <body>
+        <header>
+            <ul>
+                <li></li>
+                <li style = "height:50px">
+                    <input type = "text" id = "city_name" name = "city_name" placeholder="Enter city name">
+                    <button onclick="validateCity()" >Search</button>
+                </li>
+            </ul>
+        </header>
+        <div id = "todayForecast" style = "margin-top:80px;width:60%">
+        </div>
+        <div id = "futureForecast" style = "margin-top: 10px;width:60%" >
+        </div>
+    </body>
+    <script src = "index.js"></script>
+</html>
