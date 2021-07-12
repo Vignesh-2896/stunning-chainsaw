@@ -7,16 +7,16 @@ document.addEventListener("keydown",(event) => {
 
 const fetchWeatherData = async(cityName) => {
     try {
-        let fetchedData = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${Your_App_Key_Here}&units=metric`,{mode:'cors'});    
-        let currentDayData = await fetchedData.json();
-        clearData();
+    let fetchedData = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=05518431df0ad23cdaeb9fdf1863de6b&units=metric`,{mode:'cors'});    
+    let currentDayData = await fetchedData.json();
+    clearData();
 
-        h1 = document.createElement("h1");
-        h1.textContent = currentDayData.name+", "+currentDayData.sys.country;
-        h1.style.textAlign = "center";
-        todayForecast.appendChild(h1);
+    h1 = document.createElement("h1");
+    h1.textContent = currentDayData.name+", "+currentDayData.sys.country;
+    h1.style.textAlign = "center";
+    todayForecast.appendChild(h1);
 
-        populateFutureForecast(currentDayData.coord.lat, currentDayData.coord.lon);
+    populateFutureForecast(currentDayData.coord.lat, currentDayData.coord.lon);
     } catch {
         alert("Oops! Incorrect city name entered. Please try again.");
     }
@@ -52,7 +52,7 @@ const drillAndFetchData = (data,attribute) => {
 
 const populateFutureForecast = async(latitutde, longitude) => {
 
-    fetchedData = await fetch(`http://api.openweathermap.org/data/2.5/onecall?lat=${latitutde}&lon=${longitude}&appid=${Your_App_Key_Here}&exclude=current,minutely,hourly&units=Metric`,{mode:'cors'});
+    fetchedData = await fetch(`http://api.openweathermap.org/data/2.5/onecall?lat=${latitutde}&lon=${longitude}&appid=05518431df0ad23cdaeb9fdf1863de6b&exclude=current,minutely,hourly&units=Metric`,{mode:'cors'});
     let futureDaysData = await fetchedData.json();
     futureDaysData = futureDaysData.daily;
     populateTodayForecast(futureDaysData[0]);
