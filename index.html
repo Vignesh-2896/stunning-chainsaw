@@ -1,31 +1,42 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Weather App</title>
-        <link rel = "stylesheet" href = "index.css">
-    </head>
-    <body>
-        <header>
-            <ul>
-                <li></li>
-                <li style = "height:50px">
-                    <input type = "text" id = "city_name" name = "city_name" placeholder="Enter city name">
-                    <button onclick="validateCity()" >Search</button>
-                </li>
-            </ul>
-        </header>
-        <div id = "todayForecast" style = "margin-top:80px;width:60%">
-            <h1 id = "todayForecast_City"></h1>
-            <h2 id = "todayForecast_Date" style = "margin-bottom: 5px;" ></h2>
-            <img id = "todayForecast_Type">
-            <table id = "todayForecast_Table" border = "1" style = "margin-bottom: 10px;">
-            </table>
-        </div>
-        <div id = "futureForecast" style = "margin-top: 10px;width:60%" >
-            <h2 style = "text-align: center;" id = "futureForecast_Heading"></h2>
-            <table id = "futureForecast_Table" border = "1" style = "margin-bottom: 10px;">
-            </table>            
-        </div>
-    </body>
-    <script src = "index.js"></script>
+  <head>
+    <title>Weather App</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li></li>
+        <li style="height: 50px">
+          <input
+            type="text"
+            id="city_name"
+            name="city_name"
+            placeholder="Enter city name"
+          />
+          <button onclick="validateCity()">Search</button>
+        </li>
+      </ul>
+    </header>
+    <div id="todayForecast" style="margin-top: 80px; width: 60%">
+      <h1 id="todayForecast_City"></h1>
+      <h2 id="todayForecast_Date" style="margin-bottom: 5px"></h2>
+      <img id="todayForecast_Type" />
+      <table
+        id="todayForecast_Table"
+        border="1"
+        style="margin-bottom: 10px"
+      ></table>
+    </div>
+    <div id="futureForecast" style="margin-top: 10px; width: 60%">
+      <h2 style="text-align: center" id="futureForecast_Heading"></h2>
+      <table
+        id="futureForecast_Table"
+        border="1"
+        style="margin-bottom: 10px"
+      ></table>
+    </div>
+  </body>
+  <script src="index.js"></script>
 </html>

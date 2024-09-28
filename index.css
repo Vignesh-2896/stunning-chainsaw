@@ -1,58 +1,59 @@
 header {
-    width: 100%;
-    height: 60px;
-    top:0;
-    left:0;
-    position: fixed;
+  width: 100%;
+  height: 60px;
+  top: 0;
+  left: 0;
+  position: fixed;
 }
 
-#futureForecast,#todayForecast {
-    margin-left: auto;
-    margin-right:auto;
-    text-align: center;
+#futureForecast,
+#todayForecast {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 #todayForecast table {
-    margin-left: auto;
-    margin-right:auto;    
+  margin-left: auto;
+  margin-right: auto;
 }
 
 input {
-    height:40px;
-    width: 70%;
-    margin: 5px;
-    font-size:24px;
-    padding-left: 10px;
+  height: 40px;
+  width: 70%;
+  margin: 5px;
+  font-size: 24px;
+  padding-left: 10px;
 }
 
-input:focus{
-    outline: none;
+input:focus {
+  outline: none;
 }
 
 button {
-    height: 46px;
-    width: 100px;
-    margin-left: -9px;
-    vertical-align: top;
-    margin-top: 5px;
-    font-size: 16px;
+  height: 46px;
+  width: 100px;
+  margin-left: -9px;
+  vertical-align: top;
+  margin-top: 5px;
+  font-size: 16px;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 li {
-    display: inline-block;
-    height: 40px;
+  display: inline-block;
+  height: 40px;
 }
 
 body {
-    background-image: url("https://images.unsplash.com/photo-1464618663641-bbdd760ae84a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url("https://images.unsplash.com/photo-1464618663641-bbdd760ae84a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #futureForecast th {
-    min-width: 150px;
+  min-width: 150px;
 }
